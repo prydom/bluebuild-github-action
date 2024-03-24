@@ -101,4 +101,5 @@ runs:
           bluebuild build -v --push ./config/${{ inputs.recipe }} \
           --registry ${{inputs.registry}} \
           --registry-namespace ${{inputs.registry_namespace}} \
+          --verbose \
           --compression-format gzip
