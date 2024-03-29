@@ -81,7 +81,7 @@ runs:
           --detach \
           --rm \
           --name blue-build-installer \
-          ghcr.io/blue-build/cli:v0.8.3 \
+          ghcr.io/blue-build/cli:v0.8.3-installer \
           tail -f /dev/null
         docker cp blue-build-installer:/out/bluebuild /usr/local/bin/bluebuild
         docker stop -t 0 blue-build-installer
